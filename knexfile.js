@@ -1,7 +1,7 @@
 var dotenv = require('dotenv');
 
 dotenv.load();
-
+console.log(process.env);
 module.exports = {
     client: 'postgresql',
     connection: process.env.DATABASE_URL || {
